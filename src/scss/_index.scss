@@ -129,3 +129,76 @@ code {
     animation: progress 1.5s ease-in-out forwards;
   }
 }
+.tech_stack {
+  display: flex;               
+  justify-content: space-around;
+  align-items: center;         
+  flex-wrap: wrap;             
+  gap: 20px;                   
+  padding: 20px;               
+  background-color: #f4f4f4;   
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) { /* Adjust the min-width as needed */
+  .tech_stack {
+    flex-wrap: wrap; /* Ensure items can wrap */
+    max-height: 200px; /* Set a max-height for two rows */
+    overflow: hidden; /* Prevent overflow */
+    max-width: 600px;
+  }
+}
+
+
+.tech_stack h3 {
+  width: 100%;                 
+  text-align: center;          
+  margin-bottom: 20px;         
+}
+
+.tech_stack i {
+  font-size: 50px;             
+  color: #333;                 
+}
+
+.tech_stack i:hover {
+  color: #007bff;             
+  transform: scale(1.1);      
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.navbar-transparent {
+  background-color: transparent !important; 
+  color: white !important;                  
+}
+
+.navbar-transparent .navbar-brand {
+  color: white !important;                
+}
+
+.navbar-transparent .navbar-nav .nav-link {
+  color: white !important;                   
+}
+
+.navbar-transparent .navbar-nav .nav-link:hover {
+  color: #f8f9fa !important;                 
+}
+
+.navbar-transparent .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);   
+}
+
+.navbar-transparent .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,%20255,%20255,%20255%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* This replaces the default Bootstrap icon with a white-colored one */
+}
+.typist {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.grayscale {
+  filter: grayscale(100%); /* Apply a full grayscale filter */
+  transition: filter 0.3s ease; /* Optional: Smooth transition for effects */
+}
+
+.grayscale:hover {
+  filter: grayscale(0%); /* Remove grayscale on hover (optional) */
+}

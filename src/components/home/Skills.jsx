@@ -36,8 +36,19 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
             eventKey="hard-skills"
             title="Technical Skills"
           >
-            <Row className="pt-3 px-1">
-              <SkillsTab skills={hardSkills} isScrolled={isScrolled} />
+            <Row className="pt-3 px-1 justify-content-center">
+            <div className="tech_stack">
+              <h3>Core Tech</h3>
+              <i className="devicon-javascript-plain plain" style={{ fontSize: '50px' }}></i>
+              <i className="devicon-php-plain pla" style={{ fontSize: '50px' }}></i> 
+              <i className="devicon-nodejs-plain plain" style={{ fontSize: '50px' }}></i> 
+              <i className="devicon-express-original plain" style={{ fontSize: '50px' }}></i> {/* Express icon */}
+              <i className="devicon-react-original plain" style={{ fontSize: '50px' }}></i> 
+              <i className="devicon-laravel-plain plain" style={{ fontSize: '50px' }}></i> 
+              <i className="devicon-docker-plain plain" style={{ fontSize: '50px' }}></i> 
+              <i className="devicon-git-plain plain" style={{ fontSize: '50px' }}></i> 
+            </div>
+              {/* <SkillsTab skills={hardSkills} isScrolled={isScrolled} /> */}
             </Row>
           </Tab>
           <Tab
